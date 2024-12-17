@@ -1,8 +1,7 @@
 from app.backend.db import Base
 from sqlalchemy import Column, Integer, String, Float, Boolean, ForeignKey
 from sqlalchemy.orm import relationship
-from app.models.user import User
-
+from app.models import *
 class Task(Base):
     __tablename__ = 'tasks'
     __table_args__ = {'extend_existing': True}
